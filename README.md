@@ -1,9 +1,12 @@
 # Archangel Home Network Security Lab
 
 **Owner:** Z.Angell
+
 **GitHub:** [@ZAngell-Cloud](https://github.com/ZAngell-Cloud)
+
 **Last Updated:** June 05 2026
-**Status:** Phase 7 of 15 Complete — Actively Expanding
+
+**Status:** Phase 7 of 15 Complete — Finalizing Documentation / Actively Expanding
 
 > A production-grade, Zero Trust home network security lab built on enterprise open-source tooling. Designed to demonstrate hands-on proficiency in network security architecture, firewall administration, SIEM operations, incident response, and threat detection — closely aligned with enterprise and DoD security environments.
 
@@ -61,7 +64,7 @@ Internet
 ┌───▼──────────────────────────────────────────────────┐
 │              OPNsense Firewall (fw01)                │
 │         5-NIC — Zero Trust Policy Enforcer           │
-│	 (creates VLANs 10/20/30/40/50/60/99)	       │
+│	     (creates VLANs 10/20/30/40/50/60/99)	       │
 │  Suricata IPS │ WireGuard VPN │ Unbound DNS+DoT      │
 └──┬────────┬──────────┬──────────────┬────────────────┘
    │        │          │              │
@@ -73,7 +76,7 @@ Internet
    │                             └──────┬────────────┘
    │                                    │
    │              ┌─────────────────────┤
-   │		  │			│
+   │		      │		             	│
    │	    [Port-A trunk]	  [Port-B trunk]
    │              │                     │
    │         ┌────▼──────┐    ┌─────────▼────────────┐
@@ -81,10 +84,10 @@ Internet
    │         │ Proxmox   │    │  WPA3 SSIDs          │
    │         │  G4 Mini  │    │  VLAN-mapped         │
    │         └────┬──────┘    └─────────┬────────────┘
-   │              │			│
-   │		  │			└────────────┐
-   │    ┌─────────┴──────────┐		   ┌─────────┴──────────┐
-   │    │                    │		   │                    │
+   │              │		             	│
+   │	      	  │			            └────────────┐
+   │    ┌─────────┴──────────┐		       ┌─────────┴──────────┐
+   │    │                    │	     	   │                    │
    │ VLANs: 10(ADMIN) 20(MGMT) 30(STOR)     VLANs: 10(ADMIN) 50(IoT)
    │ 40(DMZ) 60(FAMILY) 99(GUEST)		     60(FAMILY) 99(GUEST)
    │
@@ -194,23 +197,23 @@ archangel-homelab/
 ├── README.md                        ← This file; overview and skills mapping
 ├── ARCHITECTURE.md                  ← Network topology, VLAN design, Zero Trust model
 ├── hardware/
-│   ├── inventory.md                 ← Detailed hardware specs and role assignments
-│   └── storage-allocation.md        ← Drive inventory, ZFS pool design, allocation rationale
+│   ├── inventory.md (IN-PROCESS)                ← Detailed hardware specs and role assignments
+│   └── storage-allocation.md (IN-PROCESS)       ← Drive inventory, ZFS pool design, allocation rationale
 ├── setup/
-│   ├── 01-firewall.md               ← Phase 1-2: OPNsense installation and VLAN configuration
-│   ├── 02-switch.md                 ← Phase 3: TP-Link managed switch setup
-│   ├── 03-hypervisor.md             ← Phase 4: Proxmox VE single-node deployment
-│   ├── 04-nas.md                    ← Phase 5: TrueNAS SCALE configuration
-│   ├── 05-wireless.md               ← Phase 6: UniFi AP adoption and SSID configuration
-│   ├── 06-firewall-rules.md         ← Phase 7: Inter-VLAN policy and firewall rules
-│   ├── 07-vpn.md                    ← Phase 8: WireGuard + Headscale
-│   ├── 08-dns.md                    ← Phase 9: Pi-hole + Unbound + DoT
-│   ├── 09-ids-ips.md                ← Phase 10: Suricata IDS/IPS
-│   ├── 10-siem.md                   ← Phase 11: Wazuh SIEM deployment
-│   ├── 11-dfir.md                   ← Phase 12: Velociraptor DFIR
-│   ├── 12-dmz.md                    ← Phase 13: DMZ services and reverse proxy
-│   ├── 13-red-team.md               ← Phase 14: Kali + adversary emulation
-│   └── 14-logging-backups.md        ← Phase 15: Centralized logging and backup strategy
+│   ├── 01-firewall.md (IN-PROCESS)              ← Phase 1-2: OPNsense installation and VLAN configuration
+│   ├── 02-switch.md (IN-PROCESS)                ← Phase 3: TP-Link managed switch setup
+│   ├── 03-hypervisor.md (IN-PROCESS)            ← Phase 4: Proxmox VE single-node deployment
+│   ├── 04-nas.md (IN-PROCESS)                   ← Phase 5: TrueNAS SCALE configuration
+│   ├── 05-wireless.md (IN-PROCESS)              ← Phase 6: UniFi AP adoption and SSID configuration
+│   ├── 06-firewall-rules.md (IN-PROCESS)        ← Phase 7: Inter-VLAN policy and firewall rules
+│   ├── 07-vpn.md (IN-PROCESS)                   ← Phase 8: WireGuard + Headscale
+│   ├── 08-dns.md (IN-PROCESS)                   ← Phase 9: Pi-hole + Unbound + DoT
+│   ├── 09-ids-ips.md (IN-PROCESS)               ← Phase 10: Suricata IDS/IPS
+│   ├── 10-siem.md (IN-PROCESS)                  ← Phase 11: Wazuh SIEM deployment
+│   ├── 11-dfir.md (IN-PROCESS)                  ← Phase 12: Velociraptor DFIR
+│   ├── 12-dmz.md (IN-PROCESS)                   ← Phase 13: DMZ services and reverse proxy
+│   ├── 13-red-team.md (IN-PROCESS)              ← Phase 14: Kali + adversary emulation
+│   └── 14-logging-backups.md (IN-PROCESS)       ← Phase 15: Centralized logging and backup strategy
 ├── playbooks/
 │   ├── ir-ransomware.md             ← Incident response: ransomware
 │   ├── ir-phishing.md               ← Incident response: phishing
