@@ -7,10 +7,10 @@ All significant changes to the lab are logged here with dates and context.
 ## Format
 
 ```
-## [Phase X] YYYY-MM-DD — Description
-### What was done
-### Issues encountered and resolved
-### Current status
+[Phase X] YYYY-MM-DD — Description
+ What was done
+ Issues encountered and resolved
+ Current status
 ```
 
 ---
@@ -191,4 +191,4 @@ In Progress — core components installed, testing underway.
 
 ---
 
-*Maintained by Angell — Last update June 05 2026*
+*Maintained by Z.Angell — Last update June 05 2026*
