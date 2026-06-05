@@ -1,6 +1,6 @@
 # Archangel Home Network Security Lab
 
-**Owner:** Angell
+**Owner:** Z.Angell
 **GitHub:** [@ZAngell-Cloud](https://github.com/ZAngell-Cloud)
 **Last Updated:** June 05 2026
 **Status:** Phase 7 of 15 Complete — Actively Expanding
@@ -235,5 +235,6 @@ archangel-homelab/
 
 ---
 
-*Maintained by Angell*
+*Maintained by Z.Angell*
+
 *Certifications: CompTIA Security+ SY0-701 · CompTIA Hybrid Server Pro: Core · Google IT Automation with Python Professional Certificate*
