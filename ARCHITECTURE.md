@@ -1,7 +1,9 @@
 # Network Architecture
 
 **Version:** 1.0
+
 **Last Updated:** June 05 2026
+
 **Status:** Phase 7 Complete — Core segmentation and policy enforcement operational
 
 > Specific IP addresses are redacted in this public document. All network references use VLAN names, zone designations, and role-based hostnames. Adapt addressing to your own RFC 1918 scheme.
